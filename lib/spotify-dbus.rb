@@ -3,7 +3,7 @@ require 'dbus'
 module Spotify
   class << self
     def player
-      @@player ||= player_object
+      @player ||= player_object
     end
     
     private
