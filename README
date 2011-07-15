@@ -4,8 +4,8 @@ https://gist.github.com/892428
 
 Example:
 
-./spotify pause
-./spotify play
+./spotify Pause
+./spotify Play
 
 
 List of Available methods:
