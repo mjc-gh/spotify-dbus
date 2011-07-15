@@ -12,30 +12,32 @@ Install
 	gem install spotify-dbus
 
 
-Exmaples
+Examples
 --------
 	require 'spotify-dbus'
 
 	Spotify.player.Pause
 	Spotify.player.Play
 
+Command line Utility
+--------------------
 
-Command Utility Examples
-------------------------
-	spotify-dbus Pause
-	spotify-dbus Play
+    spotify-dbus Next
+	spotify-dbus Previous
+	spotify-dbus PlayPause
+	
 
 
 Available methods
 -----------------
 
-# Next
-# Previous
-# Pause
-# PlayPause (think toggle)
-# Stop
-# Play
-# Seek
-# SetPosition
-# OpenUri
+* Next
+* Previous
+* Pause
+* PlayPause (think toggle)
+* Stop
+* Play
+* Seek
+* SetPosition
+* OpenUri
 
