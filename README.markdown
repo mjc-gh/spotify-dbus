@@ -1,14 +1,41 @@
+spotify-dbus (for Ruby)
+=========
+
+Credits
+-------
+
 DBus exmaple from:
 https://gist.github.com/892428
 
-
-Example:
-
-./spotify Pause
-./spotify Play
+Install
+--------
+	gem install spotify-dbus
 
 
-List of Available methods:
+Exmaples
+--------
+	require 'spotify-dbus'
 
-"Next", "Previous", "Pause", "PlayPause", "Stop", "Play", "Seek", "SetPosition", "OpenUri"
+	Spotify.player.Pause
+	Spotify.player.Play
+
+
+Command Utility Examples
+------------------------
+	spotify-dbus Pause
+	spotify-dbus Play
+
+
+Available methods
+-----------------
+
+# Next
+# Previous
+# Pause
+# PlayPause (think toggle)
+# Stop
+# Play
+# Seek
+# SetPosition
+# OpenUri
 
