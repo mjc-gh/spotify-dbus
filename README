@@ -1,0 +1,14 @@
+DBus exmaple from:
+https://gist.github.com/892428
+
+
+Example:
+
+./spotify pause
+./spotify play
+
+
+List of Available methods:
+
+"Next", "Previous", "Pause", "PlayPause", "Stop", "Play", "Seek", "SetPosition", "OpenUri"
+
