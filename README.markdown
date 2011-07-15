@@ -41,3 +41,21 @@ Available methods
 * SetPosition
 * OpenUri
 
+RVM Wrapper
+-----------
+
+This is useful when create keyboard shortcuts in Linux.
+
+    rvm wrapper [version]@spotify-dbus [prefix] spotify-dbus
+	
+So for example:
+
+    rvm wrapper 1.9.2@spotify-dbus wrapper spotify-dbus
+	
+Now you can bind a shortcut with the following command
+
+    /home/[name]/.rvm/bin/wrapper_spotify-dbus [cmd]
+	
+So for example:
+
+    /home/bob/.rvm/bin/wrapper_spotify-dbus PlayPause
