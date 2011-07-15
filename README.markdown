@@ -19,7 +19,7 @@ Examples
 	Spotify.player.Pause
 	Spotify.player.Play
 
-Command line Utility
+Command Line Utility
 --------------------
 
     spotify-dbus Next
@@ -44,11 +44,11 @@ Available methods
 RVM Wrapper
 -----------
 
-This is useful when create keyboard shortcuts in Linux.
+This is useful when creating keyboard shortcuts in Linux (and OSX).
 
     rvm wrapper [version]@spotify-dbus [prefix] spotify-dbus
 	
-So for example:
+For example:
 
     rvm wrapper 1.9.2@spotify-dbus wrapper spotify-dbus
 	
@@ -56,6 +56,6 @@ Now you can bind a shortcut with the following command
 
     /home/[name]/.rvm/bin/wrapper_spotify-dbus [cmd]
 	
-So for example:
+For example:
 
     /home/bob/.rvm/bin/wrapper_spotify-dbus PlayPause
