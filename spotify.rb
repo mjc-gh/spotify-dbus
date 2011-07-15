@@ -7,6 +7,6 @@ object = service.object('/org/mpris/MediaPlayer2')
 object.introspect
 
 player = object['org.mpris.MediaPlayer2.Player']
-cmd = ARGV.pop.capitalize
+cmd = ARGV.pop
 
 player.send(cmd) if player.methods[cmd]
