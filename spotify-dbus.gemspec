@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
 
   s.name = 'spotify-dbus'
   s.version = '0.3'
-  s.date = '2011-07-15'
+  s.date = '2011-08-10'
 
   s.description = "Simple module and bin for Spotify DBus interfacing"
   s.summary = "#{s.description}!"
