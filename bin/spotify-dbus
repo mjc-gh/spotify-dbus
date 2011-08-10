@@ -1,13 +1,23 @@
 #!/usr/bin/env ruby
-#require 'spotify-dbus'
-require File.join(File.dirname(__FILE__), '../lib/spotify-dbus.rb')
+require 'spotify-dbus'
 
+def error msg
+  puts msg
+  exit false
+end
 
-cmd = ARGV.pop
-
-begin
-  Spotify.player.send(cmd) if Spotify.player.methods[cmd]
-rescue
-  puts "Spotify is not running!"
+if ARGV.size > 0
+  begin
+    cmd = ARGV.pop
+    if Spotify.player.methods[cmd]
+      Spotify.player.send(cmd) 
+    else
+      error "Invalid command!"
+    end
+  rescue
+    error "Spotify is not running!"
+  end
+else
+  error "No command given!"
 end
 
