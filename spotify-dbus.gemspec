@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
 
   s.name = 'spotify-dbus'
-  s.version = '0.1'
+  s.version = '0.2'
   s.date = '2011-07-15'
 
   s.description = "Simple module and bin for Spotify DBus interfacing"
@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email = "mikeycgto@gmail.com"
 
   s.files = %w[
-    README
+    README.markdown
     bin/spotify-dbus
     lib/spotify-dbus.rb
   ]
