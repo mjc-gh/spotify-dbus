@@ -9,9 +9,10 @@ end
 if ARGV.size > 0
   begin
     cmd = ARGV.pop
+    player = SpotifyDBus.player
     
-    if Spotify.player.methods[cmd]
-      Spotify.player.send(cmd)
+    if player.methods[cmd]
+      player.send(cmd)
       
     else
       die "Invalid command!"

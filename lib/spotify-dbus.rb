@@ -1,6 +1,6 @@
 require 'dbus'
 
-module Spotify
+module SpotifyDBus
   def self.player
     @player ||= find_dbus_object
   end    
