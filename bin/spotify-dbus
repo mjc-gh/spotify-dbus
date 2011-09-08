@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'spotify-dbus'
 
-def error msg
+def die msg
   puts msg
   exit false
 end
@@ -9,15 +9,19 @@ end
 if ARGV.size > 0
   begin
     cmd = ARGV.pop
+    
     if Spotify.player.methods[cmd]
-      Spotify.player.send(cmd) 
+      Spotify.player.send(cmd)
+      
     else
-      error "Invalid command!"
+      die "Invalid command!"
+      
     end
   rescue
-    error "Spotify is not running!"
+    die "Spotify is not running!"    
   end
+  
 else
-  error "No command given!"
+  die "No command given!"  
 end
 
