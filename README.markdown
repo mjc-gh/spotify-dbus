@@ -1,30 +1,30 @@
-spotify-dbus (for Ruby)
-=========
+# spotify-dbus (for Ruby)
 
-Credits
--------
+
+## Credits
+
 
 DBus exmaple from:
 https://gist.github.com/892428
 
-Install
---------
-	gem install spotify-dbus
+## Install
+
+    gem install spotify-dbus
 
 
-Examples
---------
-	require 'spotify-dbus'
+## Examples
 
-	Spotify.player.Pause
-	Spotify.player.Play
+    require 'spotify-dbus'
 
-Command Line Utility
---------------------
+    Spotify.player.Pause
+    Spotify.player.Play
+
+## Command Line Utility
+
 
     spotify-dbus Next
-	spotify-dbus Previous
-	spotify-dbus PlayPause
+    spotify-dbus Previous
+    spotify-dbus PlayPause
 	
 
 
